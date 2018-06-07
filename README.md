@@ -67,3 +67,9 @@ And the resulting image:
 
 
 The LIDAR image is much softer now with all the added noise, as expected. Granted, advancements in LIDAR technology could allow to differentiate between different LIDARS (by using different frequencies, different digital encoding that would be modulated into the laser pulses…) and that might workaround the issue, assuming it won’t slow down the LIDAR spin which also would reduce resolution. In any case, as I understand it, this issue should be taken under consideration. 
+
+
+## Next interesting projects
+* Train an object classifier on camera images and velodyne images
+   * test trained model on KITTI benchmarks
+* plot 3D boxes on camera images

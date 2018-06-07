@@ -37,7 +37,9 @@ Very interesting. The pedestrian, as well as the trash can,  cast a shadow that 
 ## Labels
 
 The KITTI dataset also comes with labels- classification of the objects in the dataset, namely cars, cyclists, pedestrians and tram. Parts of each frame in the train dataset are labeled in accordance with the frame content. For instance, for the frame above, the corresponding label is:
-  'Pedestrian 0.00 0 -0.20 712.40 143.00 810.73 307.92 1.89 0.48 1.20 1.84 1.47 8.41 0.01'
+
+  ```Pedestrian 0.00 0 -0.20 712.40 143.00 810.73 307.92 1.89 0.48 1.20 1.84 1.47 8.41 0.01```
+  
 The first value, pedestrian the the type of the object, the next two values indicates the degree to which the object is  truncated and/or occluded. The single pedestrian in the frame is entirely visible, hence the 0 values.
 The next 12 values indicate (x,y range, height, width, length and location in the camera coordinate system). 
 

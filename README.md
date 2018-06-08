@@ -10,8 +10,8 @@ The dataset was collected by mounting stereo color cameras and a Velodyne LiDAR,
 The stereo cameras are plain images captured during the car drive through rural and city areas.
 
 Camera Examples:
-![example_1](example_image_1.png)
-![example_image_2](example_image_2.png)
+![example_1](images/example_image_1.png)
+![example_image_2](images/example_image_2.png)
 
 
 The lidar cloud points are given as a numpy array (in binary) that needs to be reshaped to 3d
@@ -25,11 +25,11 @@ velodyne_image = velodyne_image.reshape((-1, 4))
 
 Once the LIDAR point cloud is loaded, it can be plotted. To plot the image, I used as a reference the “Frustum PointNets” found on GitHub (I found them via the leading board on the benchmark evaluation section)
 
-![LIDAR_no_box](LIDAR_no_box.png)
+![LIDAR_no_box](images/LIDAR_no_box.png)
 
 Now let’s compare it to the corresponding camera photo:
 
-![camera_no_box](camera_no_box.png)
+![camera_no_box](images/camera_no_box.png)
 
 Very interesting. The pedestrian, as well as the trash can,  cast a shadow that is easily detectable by the camera and the LIDAR, makes perfect sense. 
 
@@ -45,8 +45,8 @@ The next 12 values indicate (x,y range, height, width, length and location in th
 
 Let’s plot both the camera and the LIDAR images with the labels. 
 
-![camera_box](camera_box.png)
-![LIRAD_box](LIRAD_box.png)
+![camera_box](images/camera_box.png)
+![LIRAD_box](images/LIRAD_box.png)
 
 For the camera image, we’re using just the first 4 coordinates (x,y) to plot the 2D box, while for the LIDAR image all the values of the label are used to plot the 3D box after transforming to the LIDAR coordinate system. 
 
@@ -63,7 +63,7 @@ show_lidar_with_boxes(pc_velo_with_noise, objects, calib, True, img_width, img_h
 
 And the resulting image:
 
-![LIDAR_with_noise](LIDAR_with_noise.png)
+![LIDAR_with_noise](images/LIDAR_with_noise.png)
 
 
 The LIDAR image is much softer now with all the added noise, as expected. Granted, advancements in LIDAR technology could allow to differentiate between different LIDARS (by using different frequencies, different digital encoding that would be modulated into the laser pulses…) and that might workaround the issue, assuming it won’t slow down the LIDAR spin which also would reduce resolution. In any case, as I understand it, this issue should be taken under consideration. 

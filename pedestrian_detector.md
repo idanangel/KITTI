@@ -13,7 +13,7 @@ high enough would be considered as close. High is defined as `xmax-xmin>0.4`
 Example: 
 
 ![pedestrian_warning](images/close_pedestrian.png)
-## Close Pedestrian
+Pedestrian warning
 
 ![pedestrian_no_warning](images/far_pedestrian.png)
-## Close Pedestrian
+No pedestrian warning

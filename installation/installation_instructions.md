@@ -1,6 +1,6 @@
 To plot the images presented in KITTI/Readme.md complete the following steps:
 1. run:
-```base 
+```bash
 git clone https://github.com/charlesq34/frustum-pointnets.git
 ```
 
@@ -28,4 +28,13 @@ pip install -r requirements.txt
 4. Run:
 ```bash
 python kitti_3d_exploration.py
+```
+
+5. For the Pedestrian detector, follow the tensorflow object_detection installation instructions at `https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md`
+   1. After the object_detection installation is complete, run:
+
+```bash 
+python pedestrian_detector.py
+```
+
 

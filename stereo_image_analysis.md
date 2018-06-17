@@ -5,7 +5,7 @@ each image taken during the car ride is saved in two files (right and left).
 The stereo image capture can be used to build a 3D representation of the environment in front of the car using a technique that is similar to biological binocular vision.
 To compute the disparity map, I used the SBDM (Semi-Global Block-Matching) algorithm which 
 
-Let's see an example of combinig two images (left and right) to one 3d image:
+Let's see an example of combinig two images (left and right) to one 3d image (generated with stereo_image_disparity.py):
 
 
 ![left](images/disparity_analysis_left_image.png)

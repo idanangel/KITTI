@@ -31,7 +31,7 @@ matplotlib==2.2.2
 mayavi==4.6.0
 nbformat==4.4.0
 numpy==1.14.3
-opencv-python==3.4.1.15
+opencv-python==4.2.0.32
 packaging==17.1
 pandas==0.23.0
 parso==0.2.1
